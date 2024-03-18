@@ -1,0 +1,28 @@
+:root{
+    --text-color:#fff;
+    --heading-color:#555555;
+    --blue-color:#14B9D5;
+    --violet-color: #ba71da;
+    --header-hover-color: #9A9A9A;
+
+    --header-height-mobile-tablet: 126px;
+    --slider-width-tablet: 680px;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Poppins", sans-serif;
+}
+.btn{
+    width: 120px;
+    height: 38px;
+    border-radius: 20px;
+    color: var(--text-color);
+    outline: 0;
+    background-color: var(--violet-color);
+    text-transform: uppercase;
+    cursor: pointer;
+}
