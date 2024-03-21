@@ -15,6 +15,10 @@
     background-color: rgba(111, 111, 114,0.3);
     z-index: 1;
 }
+.header__img-link{
+    text-decoration: none;
+    display: block;
+}
 .header-img__logo{
     width: 160px;
     margin-right: 36px;
@@ -89,7 +93,9 @@
     position: relative;
     padding-top: 50%;
     background-image: url('https://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg');
+    background-position: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .text__about{
     position: absolute;
@@ -148,10 +154,12 @@
 .slider__search-choose {
     flex:1;
     padding: 10px 20px;
+    -webkit-tap-highlight-color: transparent;
 }
 .slider__search-choose-heading{
     font-size: 1rem;
-    padding: 20px
+    padding: 20px;
+    -webkit-tap-highlight-color: transparent;
 }
 .slider__search-list {
     position: absolute;
@@ -215,14 +223,54 @@
 /* End */
 
 /* Contetn */
-.content{
+.content {
     height: 500px;
+}
+.tour__about {
+    text-align: center;
+    margin-top: 56px;
+}
+.tour__about-heading {
+    font-size: 0.9rem;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+.tour__about-title {
+    font-size: 2.3rem;
+    color: #555555;
+    margin-top: 14px;
+}
+.tour__about-title-underline{
+    text-decoration: solid underline var(--green-color) 4px;
 }
 
 
+.tour-home{
+    margin-top: 50px;
+}
+.tour__info-img {
+    padding-top: 100%;  /*% ăn theo width của thẻ cha chứa nó*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+}
+.tour__info-img {
 
+}
+.tour__info-place {
+    position: absolute;
+    bottom: 0;
+    
+}
+.tour__info-place-name {
 
+}
+.tour__info-quantity {
 
+}
 /* End content */
 
 
@@ -239,7 +287,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     opacity: 0;
-    transition: right ease-in-out 0.8s, opacity 1s;
+    transition: right 0.8s ease-in-out , opacity 1s;
     will-change: right,opacity;
 }
 .header__menu-input-checked:checked ~ .modal__container{
@@ -368,9 +416,6 @@
     color: var(--text-color); 
     z-index: 1;  
 }
-.location__heading{
-    
-}
 .location__title{
     margin-top: 10px;
     font-size: 0.9rem;
@@ -405,12 +450,6 @@
 }
 .view__package-heading {
     font-size: 1.3rem;
-}
-.view__package-place{
-
-}
-.view__package-destination{
-
 }
 .view__destination-link{
     text-decoration: none;
