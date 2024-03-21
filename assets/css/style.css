@@ -199,6 +199,8 @@
     height: 105px;
     margin-right: 30px;
     background-color: rgba(0,0,0,0.21);
+    text-decoration: none;
+    color: var(--text-color);
 }
 .slider__menu-img {
     display: block;
@@ -209,10 +211,18 @@
 .slider__menu-title {
     margin: 5px 0;
 }
+/* End */
+
+/* Contetn */
+/* .content{
+    height: 500px;
+} */
 
 
 
 
+
+/* End content */
 
 
 
