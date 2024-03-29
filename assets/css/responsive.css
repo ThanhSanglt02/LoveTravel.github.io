@@ -80,8 +80,26 @@
     .content__ads-wrap{
         flex-direction: column;
     }
-    .content__heading-wrap{
-        margin: 0 0 34px 16px;
+    .content__heading-wraps{
+        margin: 0 0 34px 52px;
+    }
+    .tour__price-on-people{
+        position: absolute;
+        left: 164px;
+    }
+    .tour__price-link {
+        margin-bottom: 40px;
+    }
+    .tour__times-take-place {
+        --width-times-tag: 100%;
+        position: inherit;
+        margin-bottom: 54px;
+    }
+    .tour__times-detail::before{
+        display: none;
+    }
+    .content__about-more{
+        margin-top: 40px;
     }
 }
 
@@ -96,8 +114,8 @@
     .text__about-heading{
         width: 270px;
         color: #ffffff;
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 5rem;
+        line-height: 5rem;
     }
     .text__about-slogan{
         padding: 0 10px;
@@ -125,6 +143,10 @@
     .tour__about-title {
         padding: 0 20px;
     }
+    .grid.wide.content__about {
+
+        padding: 0px 50px;
+    }
     .content__heading-wrap{
         margin: 0 0 34px 30px;
         line-height: 50px;
@@ -133,5 +155,18 @@
         display: flex;
         flex-direction: column;
     }
-
+    .tour__price-on-people {
+        right: 18px;
+    }
+    .tour__times .tour__times-img {
+        min-height: 142px;
+    }
+    .tour__times-take-place {
+        --width-times-tag: 100%;
+        width: var(--width-times-tag);
+        position: absolute;
+        top:100%;
+        left:0;
+    }
 }
+    

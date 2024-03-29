@@ -1,5 +1,5 @@
 .container{
-    overflow: unset;
+    overflow: hidden;
 }
 .header{
     position: absolute;
@@ -464,7 +464,7 @@
     justify-content: center;
     align-items: center;
 }
-.col.content__heading-wrap{
+.col.content__heading-wraps{
     color: var(--text-color);
     padding-left:0;
 }
@@ -506,7 +506,6 @@
 }
 .tour__place-title {
     font-size: 3.6rem;
-    letter-spacing: 0;
     margin: 14px 0 26px 0;
 }
 .tour__place-title-underline {
@@ -525,6 +524,7 @@
     font-size: 3rem;
     position: relative;
     margin-bottom: 28px;
+    display: flex;
 }
 .tour__price-old {
     color: #dadada;
@@ -533,15 +533,19 @@
 }
 .tour__price-on-people {
     position: absolute;
-    right: 130px;
+    right: 64px;
     top: 50%;
     font-size: 1.4rem;
+    letter-spacing: 2px;
 }
 .tour__price-link .book__btn-green {
     background-color: var(--green-color);
     border: 1px solid var(--green-color);
     width: 160px;
     height: 40px;
+}
+.tour__times{
+    position: relative;
 }
 .tour__times .tour__times-img {
     background-image: url('/assets/img/lanscape.jpg');
@@ -553,12 +557,10 @@
     padding-left: 40px;
 }
 .tour__times-take-place {
-    --width-times-tag: 460px;
-    width: var(--width-times-tag);
-    height: 116px;
-    position: relative;
-    bottom: 56px;
-    left: calc((792px - var(--width-times-tag)) / 2);  /*792px là chiều dài của img*/
+    width:460px;
+    position: absolute;
+    left: 170px;
+    top: 86%;
 }
 .tour__times-take-place-center{
     justify-content: center;
@@ -598,8 +600,15 @@
     font-size: 1.4rem;
     font-weight: 400;
 }
+.content__about-world {
+    margin-top: 60px;
+}
 .content__about-more {
     display: flex;
+}
+.content__about-wrap {
+    margin-bottom: 50px;
+    padding: 0 36px;
 }
 .content__about-more-logo {
     margin-right: 20px;
