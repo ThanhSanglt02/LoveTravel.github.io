@@ -73,7 +73,10 @@
     flex: 0 0 100%;
     max-width: 100%;
 }
-
+.c-12-col-30pad {
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .c-o-1 {
     margin-left: 8.33333%;
 }

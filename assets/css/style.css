@@ -1,7 +1,6 @@
 .container{
     overflow: unset;
 }
-/* .over__checkbox:checked  */
 .header{
     position: absolute;
     top:0;
@@ -44,7 +43,7 @@
     display: block;
     padding: 25px 15px;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: 2px;
     color: var(--text-color);
@@ -68,6 +67,7 @@
     display: block;
 }
 .header__item-about-more__link {
+    font-size: 1.4rem;
     padding: 14px 20px;
     color: var(--header-hover-color);
     text-decoration: none;
@@ -76,13 +76,16 @@
 .header__item:last-child{
     margin-right: 40px;
 }
-.book__btn{
+.book__btn-violet{
+    width: 128px;
+    height: 36px;
+    background-color: var(--violet-color);
     border: 1px solid var(--violet-color);
 }
 
 .header__menu-icon{
     padding: 0 0 0 25px;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     cursor: pointer;
     color: var(--text-color);
 }
@@ -112,9 +115,9 @@
 }
 .text__about-heading{
     position: relative;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
-    margin: 54px 0 0;
+    margin: 90px 0 0;
 }
 .text__about-heading-line{
     text-decoration: underline var(--violet-color) ;
@@ -131,13 +134,13 @@
     z-index: 0;
 } */
 .text__about-slogan {
-    font-size: 1.2rem;
+    font-size: 2rem;
     letter-spacing: 4px;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 .slider__search {
     margin: 50px 0;
-    width: 350px;
+    width: 366px;
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -153,11 +156,12 @@
 }
 .slider__search-choose {
     flex:1;
-    padding: 10px 20px;
+    padding: 10px;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
 }
 .slider__search-choose-heading{
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 20px;
     -webkit-tap-highlight-color: transparent;
 }
@@ -177,7 +181,7 @@
 
 .slider__search-item{
     padding: 5px 20px;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .slider__search-item:hover{
     background-color: #2323ece3;
@@ -193,6 +197,10 @@
     text-decoration: none;
     color: #9a9a9a;
     padding-right: 20px;
+    display: block;
+}
+.slider__search-icon{
+    font-size: 1.6rem;
 }
 .slider__menu {
     display: flex;
@@ -219,24 +227,25 @@
 }
 .slider__menu-title {
     margin: 5px 0;
+    font-size: 1.4rem;
 }
 /* End */
 
-/* Contetn */
-.content {
-    height: 500px;
+/* Content */
+.grid.wide.content__about {
+    margin: 56px auto 80px;
 }
 .tour__about {
     text-align: center;
-    margin-top: 56px;
+    margin-bottom: 20px;
 }
 .tour__about-heading {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     opacity: 0.5;
     letter-spacing: 2px;
 }
 .tour__about-title {
-    font-size: 2.3rem;
+    font-size: 3.5rem;
     color: #555555;
     margin-top: 14px;
 }
@@ -244,32 +253,32 @@
     text-decoration: solid underline var(--green-color) 4px;
 }
 
-
-.tour-home{
-    margin-top: 50px;
+.tour-home__wrap{
+    margin-top: 30px;
 }
-.tour__info-img {
+.tour__info-img.overlay__linear-img{
     padding-top: 100%;  /*% ăn theo width của thẻ cha chứa nó*/
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     position: relative;
+    margin: 0;
 }
-.tour__info-img {
-
+.place-img__mini {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+}
+.place-img__mini-logo{
+    width: 35px;
+    height: 35px;
 }
 .tour__info-place {
     position: absolute;
     bottom: 0;
-    
-}
-.tour__info-place-name {
-
-}
-.tour__info-quantity {
-
 }
 /* End content */
 
@@ -290,7 +299,7 @@
     transition: right 0.8s ease-in-out , opacity 1s;
     will-change: right,opacity;
 }
-.header__menu-input-checked:checked ~ .modal__container{
+.header__menu-input-checked:checked + .modal__container{
     right:0;
     opacity: 1;
 }
@@ -300,7 +309,7 @@
     height: 26px;
 }
 .modal__about-close-icon{
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     margin: 8px 10px
 }
 .modal__about-text{
@@ -310,25 +319,24 @@
     align-items: center;
 }
 .modal__best {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     color: #9a9a9a;
     letter-spacing: 2px;
     margin-bottom: 12px;
 }
 .modal__packages {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 800;
     color: #555555;
-    margin: 0 0 34px 0;
 }
 .modal__packages::after{
     content:'';
     display: block;
     position:absolute;
-    top: calc(100% - 15px);
+    top: calc(100% - 13px);
     left: 0;
-    width: 133px;
+    width: 140px;
     height: 5px;
     background-color: #ffd105;
     z-index: -10;
@@ -344,34 +352,34 @@
 .modal__info-place {
     margin: 0 38px 0 0;
 }
-.modal__info-place-detail{
-}
 .modal__info-img {
     width: 100px;
     height: 100px;
 }
 .modal__info-title{
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
     max-width: 126px;
     overflow: hidden;
     text-overflow:ellipsis ;
+    color: #555555;
 }
 .modal__info-locate{
     color: #9a9a9a;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
 }
 .modal__info-locate-icon {
-    margin: 10px 4px 0 0;
+    margin-left: 2px;
 }
 .modal__info-price{
     width: 130px;
     height: 27px;
-    line-height: 27px;
-    text-align: center;
-    font-size: 1rem;
     background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
     border-radius: 60px;
     margin-top: 18px;
+    text-align: center;
 }
 .modal-button__color1{
     background: linear-gradient(to right, #f76570 0%, #f78d65 100%);;
@@ -383,42 +391,32 @@
     background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);;
 }
 .modal__info-link{
+    display: block;
+    line-height: 28px;
     text-decoration: none;
     color: var(--text-color);
+    font-size: 1.6rem;
 }
 .overral{
     position: relative;
-}
-.overral__package{
-    margin: 50px 0 50px;
-    /* position: relative; */
-    top: 0;
-    left: 0;
-}
-.overral__package::after{
-    content: '';
-    display: block;
-    position: absolute;
-    top:0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(101, 100, 96, 0) 0%, rgba(101, 100, 96, 0.1) 60%, rgba(101, 100, 96, 0.65) 100%);
 }
 .overral__package-img{
     width: 268px;
     height: 268px;   /*#14b9d5*/
 }
-.location__sell{
+.place__packages-positionl{
     position: absolute;
     top: 74%;
     left: 34px;
     color: var(--text-color); 
     z-index: 1;  
 }
+.location__heading {
+    font-size: 2rem;
+}
 .location__title{
     margin-top: 10px;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     letter-spacing: 2px;
 }
 .view__package {
@@ -437,7 +435,7 @@
     z-index: 3;
     display: none;
 }
-.overral:hover .view__package {
+.tour__info-img.overlay__linear-img:hover .view__package {
     display: flex;
 }
 @keyframes FadeIn {
@@ -449,16 +447,184 @@
     }
 }
 .view__package-heading {
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
-.view__destination-link{
+.view__package-place {
+    font-size: 1.6rem;
+}
+.grid.content__ads{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-search-2.jpg?id=1538');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content__ads-wrap{
+    justify-content: center;
+    align-items: center;
+}
+.col.content__heading-wrap{
+    color: var(--text-color);
+    padding-left:0;
+}
+.content__heading-1{
+    font-size: 4.5rem;
+}
+.content__heading-2{
+    font-size: 5rem;
+}
+.content__heading-underline{
+    text-decoration: solid underline var(--red-color)  ;
+}
+.content__ads-btn {
+    display: flex;
+    justify-content: center;
+}
+.content__ads-link{
+    display: block;
     text-decoration: none;
-    color: var(--blue-color);
-    width: 80%;
-    height: 30px;
+    color: var(--red-color);
     background-color: var(--text-color);
-    padding: 4px 24px;
     border-radius: 60px;
+    width: 240px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+}   
+.tour__place-price {
+    color: #555555;
 }
-
-
+.tour__place-heading {
+    font-size: 1.4rem;
+    color: #9a9a9a;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.tour__place-title {
+    font-size: 3.6rem;
+    letter-spacing: 0;
+    margin: 14px 0 26px 0;
+}
+.tour__place-title-underline {
+    text-decoration: solid underline var(--blue-color) 5px;
+}
+.tour__place-info {
+    color: #9a9a9a;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.tour__place-info-1 {
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+.tour__price-about {
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 28px;
+}
+.tour__price-old {
+    color: #dadada;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.tour__price-on-people {
+    position: absolute;
+    right: 130px;
+    top: 50%;
+    font-size: 1.4rem;
+}
+.tour__price-link .book__btn-green {
+    background-color: var(--green-color);
+    border: 1px solid var(--green-color);
+    width: 160px;
+    height: 40px;
+}
+.tour__times .tour__times-img {
+    background-image: url('/assets/img/lanscape.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 410px;
+    padding-left: 40px;
+}
+.tour__times-take-place {
+    --width-times-tag: 460px;
+    width: var(--width-times-tag);
+    height: 116px;
+    position: relative;
+    bottom: 56px;
+    left: calc((792px - var(--width-times-tag)) / 2);  /*792px là chiều dài của img*/
+}
+.tour__times-take-place-center{
+    justify-content: center;
+}
+.tour__times-detail {
+    color: var(--text-color);
+    height: 116px;
+    background-color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    position: relative;
+}
+.tour__times-detail::before{
+    content: '';
+    width: 5px;
+    height: 40px;
+    position: absolute;
+    top: calc((116px - 40px) / 2);
+    right: 0;
+    background: #000;
+    opacity: 0.05;
+    transform: skewX(350deg);
+    z-index: 2;
+}
+.tour__times-detail-last-child .tour__times-detail::before {
+    display: none;
+}
+.tour__times-number {
+    font-size: 3.4rem;
+    font-weight: 400;
+    margin: 0;
+}
+.tour__times-date {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.content__about-more {
+    display: flex;
+}
+.content__about-more-logo {
+    margin-right: 20px;
+}
+.content__about-more-logo-img {
+    width: 50px;
+    height: 50px;
+}
+.content__about-more-view {
+    color: #555555;
+}
+.content__about-more-heading {
+    font-size: 2.4rem;
+    margin: 0 0 20px 0;
+}
+.content__about-more-brief {
+    font-size: 1.4em;
+    opacity: 0.7;
+    line-height: 2.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.content__about-more-view-link {
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
+    color: var(--blue-color);
+}
