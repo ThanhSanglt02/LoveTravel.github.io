@@ -513,8 +513,8 @@
 }
 .tour__place-info {
     color: #9a9a9a;
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 .tour__place-info-1 {
     margin-bottom: 20px;
@@ -533,7 +533,7 @@
 }
 .tour__price-on-people {
     position: absolute;
-    right: 64px;
+    right: 108px;
     top: 50%;
     font-size: 1.4rem;
     letter-spacing: 2px;
