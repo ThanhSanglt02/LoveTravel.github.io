@@ -108,6 +108,10 @@
     .hide-on-mobile{
         display: none;
     }
+    .no-padding-mobile {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .slider{
         text-align: center;
     }
@@ -144,8 +148,7 @@
         padding: 0 20px;
     }
     .grid.wide.content__about {
-
-        padding: 0px 50px;
+        padding: 0px 60px;
     }
     .content__heading-wrap{
         margin: 0 0 34px 30px;
@@ -156,17 +159,23 @@
         flex-direction: column;
     }
     .tour__price-on-people {
-        right: 18px;
+        right: -6px;
     }
-    .tour__times .tour__times-img {
-        min-height: 142px;
+    .tour__about-img {
+        width: 100%;
     }
     .tour__times-take-place {
-        --width-times-tag: 100%;
-        width: var(--width-times-tag);
-        position: absolute;
-        top:100%;
-        left:0;
+        flex: 1;
+    }
+    .tour__times-box {
+        transform: translateY(-3px);
+    }
+    .content__about-wrap {
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    .content__about-more {
+        margin-bottom: 24px;
     }
 }
     
