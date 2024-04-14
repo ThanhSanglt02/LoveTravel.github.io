@@ -36,6 +36,15 @@
     }.row.row__delete-flex {
         display: block;
     }
+    .content__about-wrap {
+        overflow: hidden;
+    }
+    .sport-section-wrap {
+        display: block;
+    }
+    .sport__prices {
+        margin-top: 10px
+    }
 }
 /*Tablet*/
 @media (min-width: 740px) and (max-width: 1023px){
@@ -100,6 +109,9 @@
     }
     .content__about-more{
         margin-top: 40px;
+    }
+    .tour-home__wrap-link-logo {
+        top: 426px;
     }
 }
 
@@ -176,6 +188,9 @@
     }
     .content__about-more {
         margin-bottom: 24px;
+    }
+    .tour-home__wrap-link-logo {
+        top: 150px;
     }
 }
     

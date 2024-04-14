@@ -285,6 +285,13 @@
 
 
 /* Modal */
+.modal {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 360.8px);
+    height: 100%;
+}
 .modal__container{
     max-width: 362px;
     background-color: #fff;
@@ -397,6 +404,9 @@
     color: var(--text-color);
     font-size: 1.6rem;
 }
+/*end*/
+
+
 .overral{
     position: relative;
 }
@@ -653,9 +663,35 @@
 }
 .tour-home__wrap--border{
     border: 2px solid rgba(0,0,0,0.05);
+    position: relative;
 }
 .tour-home__ads {
     width: 100%;
+}
+.tour-home__wrap-link-logo {
+    position: absolute;
+    top: 212px;
+    right: 24px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.tour-home__wrap-link-logo-yellow {
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+.tour-home__wrap-link-logo-red {
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+.tour-home__wrap-link-logo-violet {
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+.tour-home__wrap-logo{
+    width:26px;
+    height: 26px;
 }
 .modal__info-place-detail--padding {
     padding: 30px;
@@ -686,6 +722,10 @@
 .sport__text.sport__text-m-bottom {
     margin-bottom: 6px;
 }
+.sport__quantity-info {
+    width: 34px;
+    height: 16px;
+}
 .sport__quantity {
     margin-left: 10px;
     width: 34px;
@@ -704,6 +744,35 @@
 }
 .violet {
     background-color: var(--violet-color);
+}
+.sport__quantity-info-slot {
+    min-width: 54px;
+    height: 32px;
+    background-color: #555555;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 32px;
+    transform: translate(10px, 10px);
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+.sport__quantity-info-slot::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 34px;
+    left: 10px;
+    border-color: transparent transparent #555555 transparent;
+    border-width: 6px 7px; /*cao: 6px, rộng: 6px*/
+    border-style: solid;
+}
+.sport__quantity-info:hover .sport__quantity-info-slot {
+    display: block;
+}
+.sport__quantity-info-slot p{
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 .sport__prices {
     display: flex;
@@ -737,3 +806,123 @@
     font-size: 1.4rem;
     color: var(--text-color);
 }
+.footer {
+    background-image: url('http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-7.jpg?id=1602');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 650px;
+}
+.footer__wrap {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+.footer__text-title {
+    font-size: 1.4rem;
+    color: #9a9a9a;
+    letter-spacing: 2px;
+}
+.footer__text-heading {
+    font-size: 3.6rem;
+    color: #555555;
+}
+.footer__search-wrap {
+    display: flex;
+    align-items: center;
+}
+.footer__search-bar {
+    margin-right: 20px;
+}
+.footer__search-input {
+    border-style: none;
+    outline: none;
+    color: #9a9a9a;
+    padding: 14px -4px;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    width: 230px;
+    height: 42px;
+    padding: 0px 20px;
+}
+.footer__btn-search {
+    border-style: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background-color: var(--blue-color);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.footer__about {
+    background-color: var(--text-color);
+    width: 100%;
+    padding: 34px 46px;
+    position: relative;
+}
+.footer__about-img {
+    margin-bottom: 30px;
+}
+.col.footer__about-left {
+    padding: 0 90px 0 0;
+
+}
+.footer__logo {
+    width: 150px;
+}
+.footer__about-title {
+    font-size: 1.4rem;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #9a9a9a;
+    font-weight: 400;
+}
+.footer__about-social {
+    display: flex;
+}
+.footer__social-link {
+    text-decoration: none;
+    display: block;
+    color: #555555;
+    margin-right: 24px;
+    font-size: 2.2rem;
+}
+.footer__nav-heading {
+    margin-bottom: 30px;
+    padding: 12px 0;
+    letter-spacing: 3px;
+    color: #555555;
+    font-size: 1.4rem;
+}
+.footer__nav-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+}
+.footer__nav-info-img {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.footer__about-license {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--blue-color);
+    padding: 20px 16px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.footer__about-license-title {
+
+}
+.footer__about-license-copy {
+
+}
+
